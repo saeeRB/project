@@ -1,0 +1,31 @@
+import pandas as pd
+df = pd.read_csv ('wages.csv')
+df.describe()
+
+df.shape
+
+df.size
+
+# Min
+df.min()
+
+# Max
+df.max()
+
+# Mode
+df['age'].mode()
+
+# Mean
+df['age'].mean()
+
+# Median
+df['age'].median()
+
+# Std Deviation
+round(df['age'].std(),2)
+
+# Summary statistics for all numerical columns
+round(df.describe(),2)
+
+# Summary statistics by groups
+df['age'].groupby(df['ed']).describe()
