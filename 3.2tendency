@@ -1,0 +1,15 @@
+import pandas as pd
+url_link = 'iris.csv'
+data = pd.read_csv(url_link)
+
+print('Iris-setosa')
+setosa = data['variety'] == 'Setosa'
+print(data[setosa].describe())
+
+print('Iris-versicolor')
+setosa = data['variety'] == 'Versicolor'
+print(data[setosa].describe()
+
+print('Iris-virginica')
+setosa = data['variety'] == 'Virginica'
+print(data[setosa].describe())
